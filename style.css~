@@ -38,7 +38,10 @@ img {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54085d5c9bae83ed706f4cd0dad111fefa2eb6f0
 =======
 >>>>>>> 54085d5c9bae83ed706f4cd0dad111fefa2eb6f0
 .story {
@@ -46,12 +49,16 @@ img {
 	min-width: 980px;
 	width: 980px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54085d5c9bae83ed706f4cd0dad111fefa2eb6f0
 }
 
 .story .float-left, .story .float-right {
 	padding: 100px 0 0 0;
 	position: relative;
 	width: 400px;	
+<<<<<<< HEAD
 }
 
 <<<<<<< HEAD
@@ -76,6 +83,10 @@ img {
 	padding: 100px 0 0 0;
 	position: relative;
 	width: 400px;	
+}
+
+>>>>>>> 54085d5c9bae83ed706f4cd0dad111fefa2eb6f0
+=======
 }
 
 >>>>>>> 54085d5c9bae83ed706f4cd0dad111fefa2eb6f0
