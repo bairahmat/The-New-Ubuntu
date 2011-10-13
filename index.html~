@@ -129,7 +129,7 @@ $(document).ready(function(){
 
 <!-- Footer text -->
 <footer id="footer">
-<p>The New Ubuntu, painstakingly built by <a href="http://omgubuntu.co.uk">OMG! Ubuntu!</a> and finished only minutes before release..</p>
+<p>The New Ubuntu, painstakingly built by <a href="http://twitter.com/philbagda" target="_blank">Philippe</a> and <a href="http://twitter.com/humphreybc" target="_blank">Benjamin of <a href="http://omgubuntu.co.uk">OMG! Ubuntu!</a></p>
 <p>Download Ubuntu 11.10 at <a href="http://ubuntu.com" target="_blank">www.ubuntu.com</a> | Hosted on an Ubuntu VPS courtesy of <a href="http://fasthost.co.uk" target="_blank">FastHosts UK</a></p>
 </footer>
 </div> <!--#third-->

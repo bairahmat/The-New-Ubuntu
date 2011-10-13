@@ -83,7 +83,7 @@ $(document).ready(function() { //when the document is ready...
 		if($firstBG.hasClass("inview")){
 			//call the newPos function and change the background position
 			$firstBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 700, 0.1)}); 
-			first_balloon.css({'backgroundPosition': newPos(50, windowHeight, pos, 1600, 0.2)}); 
+			first_balloon.css({'backgroundPosition': newPos(50, windowHeight, pos, 1800, 0.2)}); 
 			
 		$('#nav li a.1slide').addClass("activestate");
 		$('#nav li a.2slide').removeClass("activestate");
@@ -101,7 +101,7 @@ $(document).ready(function() { //when the document is ready...
 		//if the second section is in view...
 		if($secondBG.hasClass("inview")){
 			//call the newPos function and change the background position
-			$secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 2100, 0.1)});
+			$secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 2000, 0.1)});
 			//call the newPos function and change the secnond background position
 			second_balloon1.css({'backgroundPosition': newPos(50, windowHeight, pos, 2500, 0.2)});
 			second_balloon2.css({'backgroundPosition': newPos(50, windowHeight, pos, 2500, 0.3)});
@@ -205,3 +205,39 @@ $(document).ready(function() { //when the document is ready...
 	});
 	
 });
+
+
+ $(document).ready(function(){
+ 
+ 
+ var imgArr = new Array( // relative paths of images
+	'images/screenshots/ubuntu.jpg',
+	'images/screenshots/dash.jpg',
+	'images/screenshots/dash-files.jpg',
+	'images/screenshots/global-menu.jpg',
+	'images/screenshots/workspaces.jpg',
+	'images/screenshots/software-center.jpg',
+ );
+ 
+ 
+ var preloadArr = new Array();
+ var i;
+ 
+ /* preload images */
+ for(i=0; i < imgArr.length; i++){
+ preloadArr[i] = new Image();
+ preloadArr[i].src = imgArr[i];
+ }
+ 
+ var currImg = 1;
+ var intID = setInterval(changeImg, 6000);
+ 
+ /* image rotator */
+ function changeImg(){
+ $('#second').animate({opacity: 0}, 1000, function(){
+ $(this).css('background','url(' + preloadArr[currImg++%preloadArr.length].src +') 50% 0 no-repeat fixed');
+ }).animate({opacity: 1}, 1000);
+ }
+ 
+ });
+
