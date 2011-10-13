@@ -108,7 +108,7 @@ $(document).ready(function() { //when the document is ready...
 		//if the second section is in view...
 		if($secondBG.hasClass("inview")){
 			//call the newPos function and change the background position
-			$secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 2100, 0.1)});
+			$secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 2200, 0.1)});
 			//call the newPos function and change the secnond background position
 			second_balloon1.css({'backgroundPosition': newPos(50, windowHeight, pos, 2500, 0.2)});
 			second_balloon2.css({'backgroundPosition': newPos(50, windowHeight, pos, 2500, 0.3)});
