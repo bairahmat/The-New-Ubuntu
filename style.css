@@ -37,12 +37,6 @@ img {
 	margin: 0 20px 0 0;
 }
 
-.center {
-	font-size: 2.5em;
-	padding: 80px 0;
-	text-align: center;
-}
-
 .story {
 	margin: 0 auto;
 	min-width: 980px;
@@ -55,6 +49,21 @@ img {
 	width: 400px;	
 }
 
+<<<<<<< HEAD
+.story {
+	margin: 0 auto;
+	min-width: 980px;
+	width: 980px;
+}
+
+.story .float-left, .story .float-right {
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 400px;	
+}
+
+=======
+>>>>>>> 85ebf9e34b2482abc5c914e2c69a343177971c4e
 
 /* Navigation menu */
 
@@ -514,6 +523,7 @@ The ones with classes are for supporting different resolutions (badly)
 	z-index: 300;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .story {
 	margin: 0 auto;
@@ -546,3 +556,5 @@ footer {
 }
 =======
 >>>>>>> 7601f1df56a6b7316e3dfe37b2abc796632045b4
+=======
+>>>>>>> 85ebf9e34b2482abc5c914e2c69a343177971c4e
