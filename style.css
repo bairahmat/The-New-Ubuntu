@@ -159,7 +159,20 @@ img {
 
 /* Footer */
 
-footer {
+footer {	
+	width: 100%;
+	margin: 0 auto 3em;
+	text-align: left;
+ 	font-size: 0.8em;
+	font-weight: 500;
+	position: absolute;
+ 	color: #fff;
+	background: #111;
+	padding: 240px 0 15px 20px;
+	border-top: 1px solid black;
+}
+
+.lt-1440 footer {
 	width: 100%;
 	margin: 0 auto 3em;
 	text-align: left;
@@ -448,7 +461,7 @@ The ones with classes are for supporting different resolutions (badly)
 #sixth {
 	background: url(images/sixthBG.jpg) 50% 0 no-repeat fixed;
 	color: white;
-	height: 800px;
+	height: 1600px;
 	padding: 100px 0 0 0;	
 }
 
