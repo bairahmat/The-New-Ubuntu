@@ -90,7 +90,7 @@ $(document).ready(function() { //when the document is ready...
 		if($firstBG.hasClass("inview")){
 			//call the newPos function and change the background position
 			$firstBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 700, 0.1)}); 
-			first_balloon.css({'backgroundPosition': newPos(50, windowHeight, pos, 1200, 0.9)}); 
+			first_balloon.css({'backgroundPosition': newPos(50, windowHeight, pos, 1200, 0.6)}); 
 			
 		$('#nav li a.1slide').addClass("activestate");
 		$('#nav li a.2slide').removeClass("activestate");
