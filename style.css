@@ -1,0 +1,513 @@
+/*
+CSS for the demo: Recreating the Nikebetterworld.com Parallax Demo
+Demo: Recreating the Nikebetterworld.com Parallax Demo
+Author: Ian Lunn
+Author URL: http://www.ianlunn.co.uk/
+Demo URL: http://www.ianlunn.co.uk/demos/recreate-nikebetterworld-parallax/
+Tutorial URL: http://www.ianlunn.co.uk/blog/code-tutorials/recreate-nikebetterworld-parallax/
+
+License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike). Please attribute work to Ian Lunn simply by leaving these comments in the source code or if you'd prefer, place a link on your website to http://www.ianlunn.co.uk/.
+
+Dual licensed under the MIT and GPL licenses:
+http://www.opensource.org/licenses/mit-license.php
+http://www.gnu.org/licenses/gpl.html
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	min-width: 980px;
+	padding: 0;
+	background-color:#14081a;
+	overflow-x:hidden !important;
+}
+
+p{
+	margin: 0 0 20px 0;	
+}
+
+p, ul{
+	font-family:"Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size-adjust:0.488;
+	font-weight:200;
+	font-style:normal;
+}
+
+img{
+	border: 0;
+}
+
+h1, #pixels{
+	font-family:"Museo 900", Verdana, serif;
+	font-size-adjust:0.40;
+	font-weight:700;
+	font-style:normal;
+}
+
+h2{
+	font-family:"Beau Sans Pro Book", Verdana, sans-serif;
+	font-size-adjust:0.531;
+	font-weight:500;
+	font-style:normal;
+}
+
+#header h1, #pixels{
+	color: #48941A;
+}
+
+.float-left{
+	float: left;	
+	margin: 0 0 0 20px;
+}
+
+.float-right{
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+.center{
+	font-size: 2.5em;
+	padding: 80px 0;
+	text-align: center;
+}
+
+#nav{
+	font-family: 'Ubuntu', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	font-size:16px;
+	margin-right: 10px;
+	text-shadow: 1px 1px 1px #4d1f41;
+}
+
+#nav{
+	list-style: none;
+	position: fixed;
+	right: 50px;
+	z-index:5000;
+	
+}
+
+#nav li{
+	margin: 0 0 15px 0;
+	font-family: 'Ubuntu', sans-serif;
+	color: #fff;
+	text-align:right;
+	line-height: 13px;
+}
+
+#nav li a{
+	margin: 0 0 15px 0;
+	font-family: 'Ubuntu', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	font-size:16px;
+	 -webkit-transition: margin 0.1s ease-out;
+    -moz-transition: margin 0.1s ease-out;
+    -o-transition: margin 0.1s ease-out;
+	text-shadow: 1px 1px 1px #4d1f41;
+	
+	
+}
+
+#nav li a.2slide{
+
+	font-family: 'Ubuntu', sans-serif;
+	color: rgba(140, 28, 231, 0.9);
+	text-decoration: none;
+	font-size:20px;
+	margin-right: 10px;
+
+	text-shadow: 1px 1px 1px #4d1f41;
+}
+
+
+#nav li a.activestate{
+
+	font-family: 'Ubuntu', sans-serif;
+	color: #dd4814;
+	text-decoration: none;
+	font-size:26px;
+	line-height:30px !important;
+	text-shadow: 1px 1px 0px #4d1f41;
+  		
+}
+
+#nav li{
+	margin: 0 0 15px 0;	
+}
+
+#header, #first, #second{
+	width: 100%;
+}
+
+#header{
+	background: white;
+	height: 130px;	
+}
+
+#first{
+	background:url(images/firstBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1600px;
+	margin: 0;
+	padding: 160px 0 0 0;
+	
+} 
+
+.lt-1440 #first{
+	background:url(images/firstBG-1440.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1600px;
+	margin: 0;
+	padding: 160px 0 0 0;
+}
+
+
+#first .first_balloon{
+	background: url(images/first_bubble.png) 50% 0 no-repeat fixed;
+	height: 1600px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 505;
+}
+
+#second{
+	background: url(images/secondBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1600px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+.lt-1440 #second{
+	background: url(images/secondBG-1440.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1600px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+#second .second_balloon1{
+	background: url(images/second_balloon1.png) 50% 0 no-repeat fixed;
+	height: 1600px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+.lt-1440 #second .second_balloon1{
+	background: url(images/second_balloon1-1440.png) 50% 0 no-repeat fixed;
+	height: 1600px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+#second .second_balloon2{
+	background: url(images/second_balloon2.png) 50% 0 no-repeat fixed;
+	height: 1600px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+.lt-1440 #second .second_balloon2{
+	background: url(images/second_balloon2-1440.png) 50% 0 no-repeat fixed;
+	height: 1600px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+#third{
+	background: url(images/thirdBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1000px;
+	padding: 100px 0 0 0;	
+}
+
+#third h2{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:1.70em;
+	text-shadow: 0px 0px 1px white;
+	color:#772953;
+	font-weight: 700;
+}
+
+#third p{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:1.10em;
+	text-shadow: 0px 0px 1px white;
+	font-weight: 400;
+	color: black;
+}
+
+#third .catch{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:1.30em;
+	text-shadow: 0px 0px 1px white;
+	font-weight: 400;
+	color: black;
+}
+
+#third .mug1{
+	background: url(images/mug1.png) 50% 0 no-repeat fixed;
+	height: 1100px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1200px;
+	z-index: 205;
+}
+
+#third .mug2{
+	background: url(images/mug2.png) 50% 0 no-repeat fixed;
+	height: 1100px;
+	margin: -100px auto ;
+	padding: 0;
+	position: absolute;
+	width: 1200px;
+	z-index: 200;
+}
+
+#third .mug3{
+	background: url(images/mug3.png) 50% 0 no-repeat fixed;
+	height: 1100px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1200px;
+	z-index: 200;
+}
+
+#fourth{
+	background: url(images/fourthBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1600px;
+	padding: 100px 0 0 0;	
+}
+
+.lt-1440 #fourth{
+	background: url(images/fourthBG-1440.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1600px;
+	padding: 100px 0 0 0;	
+}
+
+#fourth .phone{
+	background: url(images/fourth_phone.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 300;
+}
+
+.lt-1440 #fourth .phone{
+	background: url(images/fourth_phone-1440.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 300;
+}
+
+#fourth .fourth_balloon1{
+	background: url(images/fourth_balloon1.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+.lt-1440 #fourth .fourth_balloon1{
+	background: url(images/fourth_balloon1-1440.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+#fourth .fourth_balloon2{
+	background: url(images/fourth_balloon2.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+.lt-1440 #fourth .fourth_balloon2{
+	background: url(images/fourth_balloon2-1440.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+#fifth{
+	background: url(images/fifthBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1600px;
+	padding: 100px 0 0 0;	
+}
+
+#fifth .fifth_bubble{
+	background: url(images/fifth_bubble.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+#fifth .fifth_bubble2{
+	background: url(images/fifth_bubble2.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+#fifth .fb{
+	background: url(images/fb.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+#fifth .twitter{
+	background: url(images/twitter.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+#fifth .skype{
+	background: url(images/skype.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+#fifth .flickr{
+	background: url(images/flickr.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+#fifth .chat{
+	background: url(images/chat.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+#fifth .youtube{
+	background: url(images/youtube.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+#fifth .yahoo{
+	background: url(images/yahoo.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 200;
+}
+
+#sixth{
+	background: url(images/sixthBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1600px;
+	padding: 100px 0 0 0;	
+}
+
+.lt-1440 #sixth{
+	background: url(images/sixthBG-1440.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1600px;
+	padding: 100px 0 0 0;	
+}
+
+#sixth .oneiric{
+	background: url(images/oneiric.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 300;
+}
+
+.lt-1440 #sixth .oneiric{
+	background: url(images/oneiric-1440.png) 50% 0 no-repeat fixed;
+	height: 1700px;
+	margin: -100px auto;
+	padding: 0;
+	position: absolute;
+	width: 1920px;
+	z-index: 300;
+}
+
+.story{
+	margin: 0 auto;
+	min-width: 980px;
+	width: 980px;
+}
+
+.story .float-left, .story .float-right{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 350px;	
+}
