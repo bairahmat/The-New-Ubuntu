@@ -7,9 +7,12 @@ http://www.gnu.org/licenses/gpl.html
 */
 
 @charset "utf-8";
-/* CSS Document */
+
+
+/* Basic set up */
 
 body {
+	font-family: 'Ubuntu', sans-serif;
 	margin: 0;
 	min-width: 980px;
 	padding: 0;
@@ -17,33 +20,12 @@ body {
 	overflow-x: hidden !important;
 }
 
-p {
-	margin: 0 0 20px 0;	
-}
-
-p, ul {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 1em;
-	font-style: normal;
-}
-
 img {
 	border: 0;
 }
 
-h1, #pixels {
-	font-family: 'Ubuntu', serif;
-	font-style: normal;
-}
 
-h2 {
-	font-family: 'Ubuntu', sans-serif;
-	font-style: normal;
-}
-
-#header h1, #pixels {
-	color: #48941A;
-}
+/* Floats for aligning text */
 
 .float-left {
 	float: left;	
@@ -60,6 +42,21 @@ h2 {
 	padding: 80px 0;
 	text-align: center;
 }
+
+.story {
+	margin: 0 auto;
+	min-width: 980px;
+	width: 980px;
+}
+
+.story .float-left, .story .float-right {
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 400px;	
+}
+
+
+/* Navigation menu */
 
 #nav {
 	font-family: 'Ubuntu', sans-serif;
@@ -89,22 +86,14 @@ h2 {
 	font-family: 'Ubuntu', sans-serif;
 	color: #fff;
 	text-decoration: none;
-	font-size: ;
-	-webkit-transition: margin 0.1s ease-out;
-  -moz-transition: margin 0.1s ease-out;
-  -o-transition: margin 0.1s ease-out;
 	text-shadow: 1px 1px 1px #4d1f41;
 }
 
-#nav li a.2slide {
+#nav li a:hover {
 	font-family: 'Ubuntu', sans-serif;
-	color: rgba(140, 28, 231, 0.9);
-	text-decoration: none;
-	font-size: 1em;
-	margin-right: 10px;
-	text-shadow: 1px 1px 1px #4d1f41;
+	color: #fff;
+	text-shadow: 1px 1px 1px #fff;
 }
-
 
 #nav li a.activestate {
 	font-family: 'Ubuntu', sans-serif;
@@ -114,14 +103,33 @@ h2 {
 	text-shadow: 1px 1px 1px #4d1f41;
 }
 
-#header, #first, #second {
+
+/* Footer and sharing buttons */
+
+footer {
 	width: 100%;
+	margin: 2em 0 6em;
+	text-align: left;
+	font-size: 1em;
+	position: absolute;
+	float: left;
 }
 
-#header {
-	background: white;
-	height: 130px;	
+#share-buttons {
+	text-align: right;
+	float: right;
 }
+
+
+/*	
+
+Each slide - good luck!
+The ones with classes are for supporting different resolutions (badly)
+				
+*/
+
+
+/* First slide */
 
 #first {
 	background:url(images/firstBG.jpg) 50% 0 no-repeat fixed;
@@ -130,6 +138,7 @@ h2 {
 	margin: 0;
 	padding: 160px 0 0 0;
 } 
+
 
 .lt-1440 #first {
 	background: url(images/firstBG-1440.jpg) 50% 0 no-repeat fixed;
@@ -149,6 +158,9 @@ h2 {
 	width: 1920px;
 	z-index: 505;
 }
+
+
+/* Second slide */
 
 #second {
 	background: url(images/secondBG.jpg) 50% 0 no-repeat fixed;
@@ -207,6 +219,9 @@ h2 {
 	width: 1920px;
 	z-index: 200;
 }
+
+
+/* Third slide */
 
 #third {
 	background: url(images/thirdBG.jpg) 50% 0 no-repeat fixed;
@@ -268,6 +283,9 @@ h2 {
 	width: 1200px;
 	z-index: 200;
 }
+
+
+/* Fourth slide */
 
 #fourth {
 	background: url(images/fourthBG.jpg) 50% 0 no-repeat fixed;
@@ -342,6 +360,9 @@ h2 {
 	width: 1920px;
 	z-index: 200;
 }
+
+
+/* Fifth slide */
 
 #fifth {
 	background: url(images/fifthBG.jpg) 50% 0 no-repeat fixed;
@@ -440,6 +461,9 @@ h2 {
 	z-index: 200;
 }
 
+
+/* Sixth slide */
+
 #sixth {
 	background: url(images/sixthBG.jpg) 50% 0 no-repeat fixed;
 	color: white;
@@ -447,9 +471,25 @@ h2 {
 	padding: 100px 0 0 0;	
 }
 
+#sixth h2 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 2em;
+	text-shadow: 0px 0px 5px #aaa;
+	font-weight: 500;
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+#sixth p {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.5em;
+	text-shadow: 0px 0px 5px #777;
+	color: #fff;
+	line-height: 1em;
+}
+
 .lt-1440 #sixth {
 	background: url(images/sixthBG-1440.jpg) 50% 0 no-repeat fixed;
-	color: white;
 	height: 1600px;
 	padding: 100px 0 0 0;	
 }
@@ -472,33 +512,4 @@ h2 {
 	position: absolute;
 	width: 1920px;
 	z-index: 300;
-}
-
-.story {
-	margin: 0 auto;
-	min-width: 980px;
-	width: 980px;
-}
-
-.story .float-left, .story .float-right {
-	padding: 50px 0 0 0;
-	position: relative;
-	width: 350px;	
-}
-
-/* Footer and sharing buttons */
-
-footer {
-	width: 100%;
-	margin: 2em 0 6em;
-	text-align: left;
-	font-size: 1em;
-	position: absolute;
-	float: left;
-}
-
-#share-buttons {
-	text-align: right;
-	float: right;
-	position: absolute;
 }
