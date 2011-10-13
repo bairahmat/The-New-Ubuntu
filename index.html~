@@ -62,8 +62,8 @@ $(document).ready(function(){
 <ul id="nav">
 	<li><a href="#first" class="1slide" title="Next Section">Start your day</a></li>
     <li><a href="#second" class="2slide" title="Next Section">Meet Unity</a></li>
-    <li><a href="#third" class="3slide" title="Next Section">Simple and stylish</a></li>
-    <li><a href="#fourth" class="4slide" title="Next Section">Free cloud storage</a></li>
+    <li><a href="#third" class="3slide" title="Next Section">Simple and Stylish</a></li>
+    <li><a href="#fourth" class="4slide" title="Next Section">Free cloud Storage</a></li>
     <li><a href="#fifth" class="5slide" title="Next Section">Be social</a></li>
 		<li><a href="#sixth" class="6slide" title="Next Section">Just the beginning</a></li>
 	

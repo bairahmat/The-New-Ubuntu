@@ -254,26 +254,6 @@ The ones with classes are for supporting different resolutions (badly)
 	padding: 0;
 }
 
-#second .second_balloon1 {
-	background: url(images/second_balloon1.png) 50% 0 no-repeat fixed;
-	height: 1600px;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	width: 1920px;
-	z-index: 200;
-}
-
-.lt-1440 #second .second_balloon1 {
-	background: url(images/second_balloon1-1440.png) 50% 0 no-repeat fixed;
-	height: 1600px;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	width: 1920px;
-	z-index: 200;
-}
-
 
 /* Third slide */
 
