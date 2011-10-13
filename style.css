@@ -9,157 +9,142 @@ http://www.gnu.org/licenses/gpl.html
 @charset "utf-8";
 /* CSS Document */
 
-body{
+body {
 	margin: 0;
 	min-width: 980px;
 	padding: 0;
-	background-color:#14081a;
-	overflow-x:hidden !important;
+	background-color: #14081a;
+	overflow-x: hidden !important;
 }
 
-p{
+p {
 	margin: 0 0 20px 0;	
 }
 
-p, ul{
-	font-family:"Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	font-size-adjust:0.488;
-	font-weight:200;
-	font-style:normal;
+p, ul {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1em;
+	font-style: normal;
 }
 
-img{
+img {
 	border: 0;
 }
 
-h1, #pixels{
-	font-family:"Museo 900", Verdana, serif;
-	font-size-adjust:0.40;
-	font-weight:700;
-	font-style:normal;
+h1, #pixels {
+	font-family: 'Ubuntu', serif;
+	font-style: normal;
 }
 
-h2{
-	font-family:"Beau Sans Pro Book", Verdana, sans-serif;
-	font-size-adjust:0.531;
-	font-weight:500;
-	font-style:normal;
+h2 {
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
 }
 
-#header h1, #pixels{
+#header h1, #pixels {
 	color: #48941A;
 }
 
-.float-left{
+.float-left {
 	float: left;	
 	margin: 0 0 0 20px;
 }
 
-.float-right{
+.float-right {
 	float: right;
 	margin: 0 20px 0 0;
 }
 
-.center{
+.center {
 	font-size: 2.5em;
 	padding: 80px 0;
 	text-align: center;
 }
 
-#nav{
+#nav {
 	font-family: 'Ubuntu', sans-serif;
 	color: #fff;
 	text-decoration: none;
-	font-size:16px;
+	font-size: 1em;
 	margin-right: 10px;
+	padding-bottom: 100px;
 	text-shadow: 1px 1px 1px #4d1f41;
 }
 
-#nav{
+#nav {
 	list-style: none;
 	position: fixed;
 	right: 50px;
-	z-index:5000;
-	
+	margin-bottom: 100px;
+	padding-bottom: 100px;
+	z-index: 5000;
 }
 
-#nav li{
+#nav li {
 	margin: 0 0 15px 0;
 	font-family: 'Ubuntu', sans-serif;
 	color: #fff;
-	text-align:right;
+	text-align: right;
 	line-height: 13px;
 }
 
-#nav li a{
+#nav li a {
 	margin: 0 0 15px 0;
 	font-family: 'Ubuntu', sans-serif;
 	color: #fff;
 	text-decoration: none;
-	font-size:16px;
-	 -webkit-transition: margin 0.1s ease-out;
-    -moz-transition: margin 0.1s ease-out;
-    -o-transition: margin 0.1s ease-out;
+	font-size: ;
+	-webkit-transition: margin 0.1s ease-out;
+  -moz-transition: margin 0.1s ease-out;
+  -o-transition: margin 0.1s ease-out;
 	text-shadow: 1px 1px 1px #4d1f41;
-	
-	
 }
 
-#nav li a.2slide{
-
+#nav li a.2slide {
 	font-family: 'Ubuntu', sans-serif;
 	color: rgba(140, 28, 231, 0.9);
 	text-decoration: none;
-	font-size:20px;
+	font-size: 1em;
 	margin-right: 10px;
-
 	text-shadow: 1px 1px 1px #4d1f41;
 }
 
 
-#nav li a.activestate{
-
+#nav li a.activestate {
 	font-family: 'Ubuntu', sans-serif;
 	color: #dd4814;
 	text-decoration: none;
-	font-size:26px;
-	line-height:30px !important;
-	text-shadow: 1px 1px 0px #4d1f41;
-  		
+	font-size: 1em;
+	text-shadow: 1px 1px 1px #4d1f41;
 }
 
-#nav li{
-	margin: 0 0 15px 0;	
-}
-
-#header, #first, #second{
+#header, #first, #second {
 	width: 100%;
 }
 
-#header{
+#header {
 	background: white;
 	height: 130px;	
 }
 
-#first{
+#first {
 	background:url(images/firstBG.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1600px;
 	margin: 0;
 	padding: 160px 0 0 0;
-	
 } 
 
-.lt-1440 #first{
-	background:url(images/firstBG-1440.jpg) 50% 0 no-repeat fixed;
+.lt-1440 #first {
+	background: url(images/firstBG-1440.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1600px;
 	margin: 0;
-	padding: 160px 0 0 0;
+	padding: 0 0 0 0;
 }
 
 
-#first .first_balloon{
+#first .first_balloon {
 	background: url(images/first_bubble.png) 50% 0 no-repeat fixed;
 	height: 1600px;
 	margin: 0 auto;
@@ -169,7 +154,7 @@ h2{
 	z-index: 505;
 }
 
-#second{
+#second {
 	background: url(images/secondBG.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1600px;
@@ -178,7 +163,7 @@ h2{
 	padding: 0;
 }
 
-.lt-1440 #second{
+.lt-1440 #second {
 	background: url(images/secondBG-1440.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1600px;
@@ -187,7 +172,7 @@ h2{
 	padding: 0;
 }
 
-#second .second_balloon1{
+#second .second_balloon1 {
 	background: url(images/second_balloon1.png) 50% 0 no-repeat fixed;
 	height: 1600px;
 	margin: 0 auto;
@@ -197,7 +182,7 @@ h2{
 	z-index: 200;
 }
 
-.lt-1440 #second .second_balloon1{
+.lt-1440 #second .second_balloon1 {
 	background: url(images/second_balloon1-1440.png) 50% 0 no-repeat fixed;
 	height: 1600px;
 	margin: 0 auto;
@@ -207,7 +192,7 @@ h2{
 	z-index: 200;
 }
 
-#second .second_balloon2{
+#second .second_balloon2 {
 	background: url(images/second_balloon2.png) 50% 0 no-repeat fixed;
 	height: 1600px;
 	margin: 0 auto;
@@ -217,7 +202,7 @@ h2{
 	z-index: 200;
 }
 
-.lt-1440 #second .second_balloon2{
+.lt-1440 #second .second_balloon2 {
 	background: url(images/second_balloon2-1440.png) 50% 0 no-repeat fixed;
 	height: 1600px;
 	margin: 0 auto;
@@ -227,38 +212,38 @@ h2{
 	z-index: 200;
 }
 
-#third{
+#third {
 	background: url(images/thirdBG.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1000px;
 	padding: 100px 0 0 0;	
 }
 
-#third h2{
+#third h2 {
 	font-family: 'Ubuntu', sans-serif;
-	font-size:1.70em;
+	font-size: 1.4em;
 	text-shadow: 0px 0px 1px white;
-	color:#772953;
-	font-weight: 700;
+	font-weight: 500;
+	color: #772953;
 }
 
-#third p{
+#third p {
 	font-family: 'Ubuntu', sans-serif;
-	font-size:1.10em;
+	font-size: 1em;
 	text-shadow: 0px 0px 1px white;
-	font-weight: 400;
-	color: black;
+	line-height: 1.5em;
+	color: #222;
 }
 
-#third .catch{
+#third .catch {
 	font-family: 'Ubuntu', sans-serif;
-	font-size:1.30em;
+	font-size: 1em;
 	text-shadow: 0px 0px 1px white;
-	font-weight: 400;
-	color: black;
+	font-weight: 500;
+	color: #222;
 }
 
-#third .mug1{
+#third .mug1 {
 	background: url(images/mug1.png) 50% 0 no-repeat fixed;
 	height: 1100px;
 	margin: -100px auto;
@@ -268,7 +253,7 @@ h2{
 	z-index: 205;
 }
 
-#third .mug2{
+#third .mug2 {
 	background: url(images/mug2.png) 50% 0 no-repeat fixed;
 	height: 1100px;
 	margin: -100px auto ;
@@ -278,7 +263,7 @@ h2{
 	z-index: 200;
 }
 
-#third .mug3{
+#third .mug3 {
 	background: url(images/mug3.png) 50% 0 no-repeat fixed;
 	height: 1100px;
 	margin: -100px auto;
@@ -288,21 +273,21 @@ h2{
 	z-index: 200;
 }
 
-#fourth{
+#fourth {
 	background: url(images/fourthBG.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1600px;
 	padding: 100px 0 0 0;	
 }
 
-.lt-1440 #fourth{
+.lt-1440 #fourth {
 	background: url(images/fourthBG-1440.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1600px;
 	padding: 100px 0 0 0;	
 }
 
-#fourth .phone{
+#fourth .phone {
 	background: url(images/fourth_phone.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -312,7 +297,7 @@ h2{
 	z-index: 300;
 }
 
-.lt-1440 #fourth .phone{
+.lt-1440 #fourth .phone {
 	background: url(images/fourth_phone-1440.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -322,7 +307,7 @@ h2{
 	z-index: 300;
 }
 
-#fourth .fourth_balloon1{
+#fourth .fourth_balloon1 {
 	background: url(images/fourth_balloon1.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -332,7 +317,7 @@ h2{
 	z-index: 200;
 }
 
-.lt-1440 #fourth .fourth_balloon1{
+.lt-1440 #fourth .fourth_balloon1 {
 	background: url(images/fourth_balloon1-1440.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -342,7 +327,7 @@ h2{
 	z-index: 200;
 }
 
-#fourth .fourth_balloon2{
+#fourth .fourth_balloon2 {
 	background: url(images/fourth_balloon2.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -352,7 +337,7 @@ h2{
 	z-index: 200;
 }
 
-.lt-1440 #fourth .fourth_balloon2{
+.lt-1440 #fourth .fourth_balloon2 {
 	background: url(images/fourth_balloon2-1440.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -362,14 +347,14 @@ h2{
 	z-index: 200;
 }
 
-#fifth{
+#fifth {
 	background: url(images/fifthBG.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1600px;
 	padding: 100px 0 0 0;	
 }
 
-#fifth .fifth_bubble{
+#fifth .fifth_bubble {
 	background: url(images/fifth_bubble.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -379,7 +364,7 @@ h2{
 	z-index: 200;
 }
 
-#fifth .fifth_bubble2{
+#fifth .fifth_bubble2 {
 	background: url(images/fifth_bubble2.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -389,7 +374,7 @@ h2{
 	z-index: 200;
 }
 
-#fifth .fb{
+#fifth .fb {
 	background: url(images/fb.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -399,7 +384,7 @@ h2{
 	z-index: 200;
 }
 
-#fifth .twitter{
+#fifth .twitter {
 	background: url(images/twitter.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -409,7 +394,7 @@ h2{
 	z-index: 200;
 }
 
-#fifth .skype{
+#fifth .skype {
 	background: url(images/skype.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -419,7 +404,7 @@ h2{
 	z-index: 200;
 }
 
-#fifth .flickr{
+#fifth .flickr {
 	background: url(images/flickr.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -429,7 +414,7 @@ h2{
 	z-index: 200;
 }
 
-#fifth .chat{
+#fifth .chat {
 	background: url(images/chat.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -439,7 +424,7 @@ h2{
 	z-index: 200;
 }
 
-#fifth .youtube{
+#fifth .youtube {
 	background: url(images/youtube.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -449,7 +434,7 @@ h2{
 	z-index: 200;
 }
 
-#fifth .yahoo{
+#fifth .yahoo {
 	background: url(images/yahoo.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -459,21 +444,21 @@ h2{
 	z-index: 200;
 }
 
-#sixth{
+#sixth {
 	background: url(images/sixthBG.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1600px;
 	padding: 100px 0 0 0;	
 }
 
-.lt-1440 #sixth{
+.lt-1440 #sixth {
 	background: url(images/sixthBG-1440.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1600px;
 	padding: 100px 0 0 0;	
 }
 
-#sixth .oneiric{
+#sixth .oneiric {
 	background: url(images/oneiric.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -483,7 +468,7 @@ h2{
 	z-index: 300;
 }
 
-.lt-1440 #sixth .oneiric{
+.lt-1440 #sixth .oneiric {
 	background: url(images/oneiric-1440.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
@@ -493,14 +478,32 @@ h2{
 	z-index: 300;
 }
 
-.story{
+.story {
 	margin: 0 auto;
 	min-width: 980px;
 	width: 980px;
 }
 
-.story .float-left, .story .float-right{
-	padding: 100px 0 0 0;
+.story .float-left, .story .float-right {
+	padding: 50px 0 0 0;
 	position: relative;
 	width: 350px;	
+}
+
+/* Footer and sharing buttons */
+
+footer {
+	width: 100%;
+	margin: 2em 0 6em;
+	text-align: left;
+	font-size: 1em;
+	position: absolute;
+	float: left;
+}
+
+#share-buttons {
+	text-align: right;
+	float: right;
+	position: absolute;
+	margin: 20px;
 }
