@@ -29,7 +29,8 @@ img {
 
 .float-left {
 	float: left;	
-	margin: 0 0 0 20px;
+	margin: -2em 0 0 0px;
+	z-index: 1200;
 }
 
 .float-right {
@@ -47,6 +48,46 @@ img {
 	padding: 100px 0 0 0;
 	position: relative;
 	width: 400px;	
+}
+
+
+/* Last page text */
+
+#beginning-text h2 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 2em;
+	text-shadow: 0px 0px 5px #aaa;
+	font-weight: 500;
+	color: #fff;
+	margin-top: 25em;
+}
+
+#beginning-text p {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.5em;
+	text-shadow: 0px 0px 5px #777;
+	color: #fff;
+	line-height: 1em;
+}
+
+#cta {
+	margin-top: 8em;
+}
+
+#cta a {
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #22aaaa;
+}
+
+#cta a:hover {
+	text-decoration: none;
+	text-shadow: 0px 0px 10px #555;
+	color: #44dddd;
+}
+
+#cta p {
+	font-size: 1em;
 }
 
 
@@ -98,22 +139,48 @@ img {
 }
 
 
-/* Footer and sharing buttons */
+/* Sharing buttons */
+
+.likebox {
+	float: right;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.fb-like {
+	position: relative;
+	top: -3px;
+}
+
+#___plusone_0 {
+	width: 60px !important;
+}
+
+
+/* Footer */
 
 footer {
 	width: 100%;
-	margin: 2em 0 6em;
+	margin: 0 auto 3em;
 	text-align: left;
-	font-size: 1em;
+	font-size: 0.8em;
+	font-weight: 500;
 	position: absolute;
-	float: left;
+	color: #fff;
+	background: #111;
+	padding: 190px 0 15px 20px;
+	border-top: 1px solid black;
 }
 
-#share-buttons {
-	text-align: right;
-	float: right;
+footer a {
+	text-decoration: none;
+	color: #22aaaa;
 }
 
+footer a:hover {
+	text-decoration: none;
+	color: #44dddd;
+}
 
 /*	
 
@@ -186,26 +253,6 @@ The ones with classes are for supporting different resolutions (badly)
 
 .lt-1440 #second .second_balloon1 {
 	background: url(images/second_balloon1-1440.png) 50% 0 no-repeat fixed;
-	height: 1600px;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	width: 1920px;
-	z-index: 200;
-}
-
-#second .second_balloon2 {
-	background: url(images/second_balloon2.png) 50% 0 no-repeat fixed;
-	height: 1600px;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	width: 1920px;
-	z-index: 200;
-}
-
-.lt-1440 #second .second_balloon2 {
-	background: url(images/second_balloon2-1440.png) 50% 0 no-repeat fixed;
 	height: 1600px;
 	margin: 0 auto;
 	padding: 0;
@@ -385,73 +432,13 @@ The ones with classes are for supporting different resolutions (badly)
 	z-index: 200;
 }
 
-#fifth .fb {
-	background: url(images/fb.png) 50% 0 no-repeat fixed;
+#fifth .social {
+	background: url(images/social.png) 50% 0 no-repeat fixed;
 	height: 1700px;
 	margin: -100px auto;
+	width: 1920px;
 	padding: 0;
 	position: absolute;
-	width: 1920px;
-	z-index: 200;
-}
-
-#fifth .twitter {
-	background: url(images/twitter.png) 50% 0 no-repeat fixed;
-	height: 1700px;
-	margin: -100px auto;
-	padding: 0;
-	position: absolute;
-	width: 1920px;
-	z-index: 200;
-}
-
-#fifth .skype {
-	background: url(images/skype.png) 50% 0 no-repeat fixed;
-	height: 1700px;
-	margin: -100px auto;
-	padding: 0;
-	position: absolute;
-	width: 1920px;
-	z-index: 200;
-}
-
-#fifth .flickr {
-	background: url(images/flickr.png) 50% 0 no-repeat fixed;
-	height: 1700px;
-	margin: -100px auto;
-	padding: 0;
-	position: absolute;
-	width: 1920px;
-	z-index: 200;
-}
-
-#fifth .chat {
-	background: url(images/chat.png) 50% 0 no-repeat fixed;
-	height: 1700px;
-	margin: -100px auto;
-	padding: 0;
-	position: absolute;
-	width: 1920px;
-	z-index: 200;
-}
-
-#fifth .youtube {
-	background: url(images/youtube.png) 50% 0 no-repeat fixed;
-	height: 1700px;
-	margin: -100px auto;
-	padding: 0;
-	position: absolute;
-	width: 1920px;
-	z-index: 200;
-}
-
-#fifth .yahoo {
-	background: url(images/yahoo.png) 50% 0 no-repeat fixed;
-	height: 1700px;
-	margin: -100px auto;
-	padding: 0;
-	position: absolute;
-	width: 1920px;
 	z-index: 200;
 }
 
@@ -461,25 +448,8 @@ The ones with classes are for supporting different resolutions (badly)
 #sixth {
 	background: url(images/sixthBG.jpg) 50% 0 no-repeat fixed;
 	color: white;
-	height: 1600px;
+	height: 800px;
 	padding: 100px 0 0 0;	
-}
-
-#sixth h2 {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 2em;
-	text-shadow: 0px 0px 5px #aaa;
-	font-weight: 500;
-	color: #fff;
-	margin-bottom: 50px;
-}
-
-#sixth p {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 1.5em;
-	text-shadow: 0px 0px 5px #777;
-	color: #fff;
-	line-height: 1em;
 }
 
 .lt-1440 #sixth {

@@ -83,7 +83,7 @@ $(document).ready(function() { //when the document is ready...
 		if($firstBG.hasClass("inview")){
 			//call the newPos function and change the background position
 			$firstBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 700, 0.1)}); 
-			first_balloon.css({'backgroundPosition': newPos(50, windowHeight, pos, 1200, 0.9)}); 
+			first_balloon.css({'backgroundPosition': newPos(50, windowHeight, pos, 1800, 0.2)}); 
 			
 		$('#nav li a.1slide').addClass("activestate");
 		$('#nav li a.2slide').removeClass("activestate");
@@ -119,7 +119,7 @@ $(document).ready(function() { //when the document is ready...
 		if($thirdBG.hasClass("inview")){
 			//call the newPos function and change the background position
 			$thirdBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 3900, 0.1)});
-			mug1.css({'backgroundPosition': newPos(50, windowHeight, pos, 4100, 0.3)});
+			mug1.css({'backgroundPosition': newPos(50, windowHeight, pos, 4100, 0.4)});
 			mug2.css({'backgroundPosition': newPos(50, windowHeight, pos, 4100, 0.1)});
 			mug3.css({'backgroundPosition': newPos(50, windowHeight, pos, 4100, 0.2)});
 			
@@ -136,9 +136,9 @@ $(document).ready(function() { //when the document is ready...
 		if($fourthBG.hasClass("inview")){
 			//call the newPos function and change the background position
 			$fourthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 5000, 0.1)});
-			phone.css({'backgroundPosition': newPos(50, windowHeight, pos, 5700, 0.2)});
-			fourth_balloon1.css({'backgroundPosition': newPos(50, windowHeight, pos, 5700, 0.3)});
-			fourth_balloon2.css({'backgroundPosition': newPos(50, windowHeight, pos, 5700, 0.2)});
+			phone.css({'backgroundPosition': newPos(50, windowHeight, pos, 4600, 0.2)});
+			fourth_balloon1.css({'backgroundPosition': newPos(50, windowHeight, pos, 5100, 0.3)});
+			fourth_balloon2.css({'backgroundPosition': newPos(50, windowHeight, pos, 5100, 0.2)});
 			
 		$('#nav li a.1slide').removeClass("activestate");
 		$('#nav li a.2slide').removeClass("activestate");
@@ -179,8 +179,8 @@ $(document).ready(function() { //when the document is ready...
 				//if the sixth section is in view...
 		if($sixthBG.hasClass("inview")){
 			//call the newPos function and change the background position
-			$sixthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 8600, 0.1)});
-			oneiric.css({'backgroundPosition': newPos(50, windowHeight, pos, 8900, 0.2)});
+			$sixthBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 8600, 0.2)});
+			oneiric.css({'backgroundPosition': newPos(50, windowHeight, pos, 13900, -0.05)});
 			
 		$('#nav li a.1slide').removeClass("activestate");
 		$('#nav li a.2slide').removeClass("activestate");

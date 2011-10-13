@@ -8,6 +8,14 @@
 <meta itemprop="description" content="Ubuntu 11.10 is the best Ubuntu yet. Find out why.">
 <meta itemprop="image" content="http://a2.twimg.com/profile_images/1299107722/omg-twitter.png">
 
+<!--Facebook-->
+<meta property="og:title" content="The New Ubuntu" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://thenewubuntu.com" />
+<meta property="og:image" content="http://a2.twimg.com/profile_images/1299107722/omg-twitter.png" />
+<meta property="og:site_name" content="The New Ubuntu: 11.10" />
+<meta property="og:description" content="Ubuntu 11.10 is the best Ubuntu yet. Find out why." />
+
 <title>Ubuntu 11.10 is the best Ubuntu yet | The New Ubuntu</title>
 
 <link href="style.css" rel="stylesheet" type="text/css" />
@@ -50,17 +58,20 @@ $(document).ready(function(){
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <ul id="nav">
-	<li><a href="#first" class="1slide" title="Next Section">Today is going to be different</a></li>
+	<li><a href="#first" class="1slide" title="Next Section">Start your day</a></li>
     <li><a href="#second" class="2slide" title="Next Section">Meet Unity</a></li>
     <li><a href="#third" class="3slide" title="Next Section">Simple and Stylish</a></li>
     <li><a href="#fourth" class="4slide" title="Next Section">Cloud Storage</a></li>
     <li><a href="#fifth" class="5slide" title="Next Section">Be social</a></li>
-	<li><a href="#sixth" class="6slide" title="Next Section">Just the beginning</a></li>
-	<div id="share-buttonsc">
-		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://thenewubuntu.com" data-text="Ubuntu 11.10 is the best Ubuntu yet. Find out why." data-count="horizontal" data-via="omgubuntu">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-		<g:plusone size="medium"></g:plusone>
-		<div class="fb-like" data-href="http://thenewubuntu.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
-	</div>
+		<li><a href="#sixth" class="6slide" title="Next Section">Just the beginning</a></li>
+	
+		<div class="likebox">
+			<div class="fb-like" data-href="http://thenewubuntu.com" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false">
+			</div>
+			<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.thenewubuntu.com" data-text="Ubuntu 11.10 is the best Ubuntu yet. Find out why. #ubuntu" data-count="horizontal" data-related="omgubuntu">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+			<div class="g-plusone" data-size="medium" data-href="http://thenewubuntu.com">
+</div>
+		</div>
 </ul>
 
 <div id="first">
@@ -69,7 +80,7 @@ $(document).ready(function(){
 </div> <!--#intro-->
 
 <div id="second">
-	<div class="story"></div><div class="second_balloon1"></div><div class="second_balloon2"></div>
+	<div class="story"></div><div class="second_balloon1"></div>
     	<div class="float-right">
         </div>
     </div> <!--.story-->
@@ -83,7 +94,6 @@ $(document).ready(function(){
             <p>Ubuntu goes out of its way to help you achieve what you want to do without being an annoyance. Simple, stylish and suited to your needs, it makes finding files easy, managing your tasks a breeze, and customizing your computer to suit your personality a snap.</p>
 			<p>Preinstalled with dozens of useful applications including Mozilla Firefox 7 for web browsing, Mozilla Thunderbird for checking your emails, Shotwell for managing photos, and Banshee Media Player for your music library.</p>
 			<p>Take a sip out of the Ubuntu mug.</p>
-			<p class='catch'>Recommended reading: LINK</p>
         </div>
     </div> <!--.story-->
 </div> <!--#third-->
@@ -93,12 +103,11 @@ $(document).ready(function(){
     </div> <!--.story-->
 </div> <!--#fourth-->
 
-<div id="fifth"><div class="fb"></div>
+<div id="fifth">
 
 <div class="fifth_bubble"></div><div class="fifth_bubble2"></div>
 
-<div class="twitter"></div><div class="skype"></div><div class="skype"></div><div class="flickr"></div><div class="chat"></div>
-<div class="chat"></div><div class="youtube"></div><div class="yahoo"></div>
+<div class="social"></div>
 
 	<div class="story">
     </div> <!--.story-->
@@ -108,15 +117,20 @@ $(document).ready(function(){
 	<div class="oneiric"></div>
 	<div class="story">
     	<div class="float-left">
+					<div id="beginning-text"/>
         	<h2>This is just the beginning.</h2>
             <p>Ubuntu has 8 millions users.</p>
 						<p>Will you be 8 million and 1?</p>
+					</div>
+						<div id="cta"><p><a href="http://www.omgubuntu.co.uk/2011/10/ubuntu-11-10-released/">Check out Ubuntu 11.10.</a></p></div>
       </div>
   </div> <!--.story-->
-</div>
+</div> <!--#sixth-->
 
-<!-- Footer text, sharing links -->
+<!-- Footer text -->
 <footer id="footer">
+<p>The New Ubuntu, painstakingly built by <a href="http://omgubuntu.co.uk">OMG! Ubuntu!</a> and finished only minutes before release..</p>
+<p>Download Ubuntu 11.10 at <a href="http://ubuntu.com" target="_blank">www.ubuntu.com</a> | Hosted on an Ubuntu VPS courtesy of <a href="http://fasthost.co.uk" target="_blank">FastHosts UK</a></p>
 </footer>
 </div> <!--#third-->
 
