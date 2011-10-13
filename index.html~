@@ -47,7 +47,7 @@ $(document).ready(function(){
     <li><a href="#fourth" class="4slide" title="Next Section">Cloud Storage</a></li>
     <li><a href="#fifth" class="5slide" title="Next Section">Be social</a></li>
 	<li><a href="#sixth" class="6slide" title="Next Section">Just the beginning</a></li>
-	<div id="share-button">
+	<div id="share-buttonsc">
 		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://thenewubuntu.com" data-text="Ubuntu 11.10 is the best Ubuntu yet. Find out why." data-count="horizontal" data-via="omgubuntu">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 		<g:plusone size="medium"></g:plusone>
 	</div>
@@ -96,6 +96,11 @@ $(document).ready(function(){
 
 <div id="sixth"><div class="oneiric"></div>
 	<div class="story">
+    	<div class="float-left">
+        	<h2>This is just the beginning.</h2>
+            <p>Ubuntu has 8 millions users.</p>
+						<p>Will you be 8 million and 1?</p>
+      </div>
 
     </div> <!--.story-->
 
