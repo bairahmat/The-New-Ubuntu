@@ -39,6 +39,15 @@ $(document).ready(function(){
 </head>
 
 <body>
+<!-- Facebook Like button -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=142382432472489";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <ul id="nav">
 	<li><a href="#first" class="1slide" title="Next Section">Today is going to be different</a></li>
@@ -50,6 +59,7 @@ $(document).ready(function(){
 	<div id="share-buttonsc">
 		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://thenewubuntu.com" data-text="Ubuntu 11.10 is the best Ubuntu yet. Find out why." data-count="horizontal" data-via="omgubuntu">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 		<g:plusone size="medium"></g:plusone>
+		<div class="fb-like" data-href="http://thenewubuntu.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
 	</div>
 </ul>
 
