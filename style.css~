@@ -37,11 +37,15 @@ img {
 	margin: 0 20px 0 0;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54085d5c9bae83ed706f4cd0dad111fefa2eb6f0
 .story {
 	margin: 0 auto;
 	min-width: 980px;
 	width: 980px;
+<<<<<<< HEAD
 }
 
 .story .float-left, .story .float-right {
@@ -65,6 +69,16 @@ img {
 
 =======
 >>>>>>> 85ebf9e34b2482abc5c914e2c69a343177971c4e
+=======
+}
+
+.story .float-left, .story .float-right {
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 400px;	
+}
+
+>>>>>>> 54085d5c9bae83ed706f4cd0dad111fefa2eb6f0
 
 /* Navigation menu */
 
