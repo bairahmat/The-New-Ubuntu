@@ -99,7 +99,6 @@ $(document).ready(function() { //when the document is ready...
 		$('#nav li a.4slide').removeClass("activestate");
 		$('#nav li a.5slide').removeClass("activestate");
 		$('#nav li a.6spot').removeClass("activestate");
-
 		
 		}
 		
